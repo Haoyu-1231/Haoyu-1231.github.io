@@ -2,134 +2,74 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>OSworld - 提供各种操作系统、软件等的历史版本的信息以及下载</title>
-		<link rel="shortcut icon" href="https://haoyu-1231.github.io/osworld/images/Windows_logo_(1992).svg" type="image/x-icon">
+		<title>PhoneDB - 手机型号与资源数据库</title>
+		<link rel="shortcut icon" href="ico/phonedb.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 		<style>
 			body {
-				background-color: #008080;
-				font-family: Simsun;
-			}
-			.title {
-				padding: 30px;
-				border: 3px outset #79A3D0;
-				margin: 10px; 
-				background-color: #3A6EA5;
-			}
-			.position {
-				padding: 30px;
-				border: 3px outset #FFFFFF;
-				margin: 10px; 
-				background-color: #C0C0C0;
-			}
-			.end {
-				padding: 30px;
-				border: 3px outset #79A3D0;
-				margin: 10px; 
-				background-color: #3A6EA5;
-			}
-			.bigdiv1 {
-				padding: 10px;
+				background-color: #8080C0;
 				margin: 0px; 
 			}
-			.bigdiv2 {
-				padding: 10px;
-				margin: 0px; 
-			}
-			.bigdiv3 {
-				padding: 10px;
-				margin: 0px; 
-			}
-			.bigdiv4 {
-				padding: 10px;
-				margin: 0px; 
-			}
-			.bigdiv5 {
-				padding: 10px;
-				margin: 0px; 
-			}
-			.div1 {
+			div#main {
 				padding: 0px;
-				border: 3px outset #FFFFFF;
 				margin: 0px; 
-				background-color: #C0C0C0;
-			}
-			.div2 {
-				padding: 10px;
-				border: 3px outset #FFFFFF;
-				margin: 0px; 
-				background-color: #C0C0C0;
-			}
-			.div3 {
-				padding: 10px;
-				border: 3px outset #FFFFFF;
-				margin: 0px; 
-				background-color: #C0C0C0;
-			}
-			.ifm {
-				padding: 10px;
-				border: 3px outset #FFFFFF;
-				margin: 10px; 
-				background-color: #C0C0C0;
-			.divtitle {
-				padding: 5px;
-				background-color: #000080;
-			}
-			.divtext {
-				padding: 20px;
 				background-color: #FFFFFF;
+				width: 1280px;
+				justify-content: center;
+				margin: auto;
+			}
+			div#title {
+				padding: 10px;
+				margin: 0px; 
+				background-color: #FFFFFF;
+				width: 1260px;
+				margin: auto;
+			}
+			div#null {
+				padding: 0px;
+				margin: 0px; 
+				margin: auto;
+			}
+			div#navigation {
+				padding: 4px;
+				margin: 0px; 
+				background-color: #000080; /* 浏览器不支持时显示 */
+				background-image: linear-gradient(#0000C0, #0000F0, #0000C0);
+				justify-content: center;
+			}
+			div#span {
+				padding: 40px;
+				margin: 0px; 
+				background-color: #FFFFFF;
+				width: 1200px;
+				margin: auto;
+			span {
+				font-family: simsun;
 			}
 			.a {text-decoration: none;}
-			.a:hover {TEXT-DECORATION:underline}
+			.a:hover {text-decoration: underline;}
 		</style>
-</style>
 	</head>
-	<body>
-		<div name="title" align="center" class="title">
-			<div name="title_logo">
-				<a href="https://haoyu-1231.github.io/osworld/index.html" target="_blank"><img style="vertical-align:middle;color:#FFFFFF;" height=64 width=64 src="https://haoyu-1231.github.io/osworld/images/Windows_logo_(1992).svg" alt="Windows"></a>
-				<b style="font-size:64px;vertical-align:middle;color:#FFFFFF;">OSworld</b>
-				<span style="vertical-align:bottom;color:#FFFFFF;"> Beta v1</span>
+		<div id="main" align>
+			<div id="title" align>
+					<a style="height:48px;width:48px;float:left;" href="index.html"><img src="ico/phonedb.ico" alt="PhoneDB" width="48px" height="48px"></a>
+					<a href="index.html" style="text-decoration:none;"><div style="height:48px;" style="float:left;" id="titletext" align>
+						<div id="titlechitext" style="height:24px;" align>
+							<b><span style="font-family:KaiTi;font-size:20px;vertical-align:middle;color:#000000;">手机型号与资源数据库 Beta</span></b>
+						</div>
+						<div id="titleengtext" style="height:24px;" align>
+							<b><span style="font-size:12px;vertical-align:middle;color:#808080;">Phone Model & Resource Database</span></b>
+						</div>
+					</div></a>
 			</div>
-			<br><span style="color:#FFFFFF;">提供各种操作系统、软件等的历史版本的信息以及下载</span>
-		</div>
-		<div name="ifm" class="ifm">
-			<div name="ifm1" class="bigdiv1">
-				<div name="div1" class="div1">
-					<div name="div1title" class="divtitle">
-						<b style="font-size:20px;color:#FFFFFF">最新系统</b>
-					</div>
-					<div name="div1text" class="divtext">
-						<span>暂无</span>
-					</div>
-				</div>
+			<div id="navigation" align style="text-align:center;height:32px;">
+				<b><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;">首页</span></b>
+				<a href="brand.html" style="text-decoration:none;"><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;margin-left:20px;">牌子</span></a>
+				<a href="about.html" style="text-decoration:none;"><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;margin-left:20px;">关于</span></a>
 			</div>
-			<div name="ifm2" class="bigdiv2">
-				<div name="div1" class="div1">
-					<div name="div1title" class="divtitle">
-						<b style="font-size:20px;color:#FFFFFF">操作系统</b>
-					</div>
-					<div name="div1text" class="divtext">
-						<a href="https://haoyu-1231.github.io/osworld/windows.html" target="_blank" style="text-decoration: none;">
-							<img height=16 width=16 src="https://haoyu-1231.github.io/osworld/images/Windows_logo_(2021).svg" alt="Windows">
-						</a>
-						<a style="color:#000080" href="https://haoyu-1231.github.io/osworld/microsoft_windows.html" target="_blank" class="a"><b>Microsoft Windows</b></a>
-					</div>
-				</div>
-			</div>
-			<div name="ifm3" class="bigdiv3">
-				<div name="div1" class="div1">
-					<div name="div1title" class="divtitle">
-						<b style="font-size:20px;color:#FFFFFF">软件</b>
-					</div>
-					<div name="div1text" class="divtext">
-						<span>暂无</span>
-					</div>
-				</div>
+			<div id="span" align>
+				<span style="font-size:14px;">欢迎访问手机型号与资源数据库(PhoneDB)！本站致力于收集比较全的手机型号与资源，提供该手机型号、信息、参数、图片，还提供该手机铃声、闹铃、通知铃、开关机画面&声音、UI画面等资源。(有些手机缺失资源或没有)<br>当前为测试版(Beta)，我们一起加油！</span>
 			</div>
 		</div>
-			<div name="end" align="center" class="end">
-				<span style="color:#FFFFFF">版权所有 (C) 浩宇_1231 2023-2024</span>
-			</div>
 	</body>
 </html>
