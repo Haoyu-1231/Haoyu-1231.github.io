@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>PhoneDB - 手机型号与资源数据库</title>
+		<title>[牌子] - PhoneDB - 手机型号与资源数据库</title>
 		<link rel="shortcut icon" href="ico/phonedb.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 		<style>
@@ -54,6 +54,36 @@
 				margin: 0px; 
 				background-color: #FFFFFF;
 				width: 1200px;
+			}
+			div#brand {
+				padding: 0px;
+				margin: 0px; 
+				background-color: #FFFFFF;
+				width: 1200px;
+			}
+			div#samsung {
+				padding: 20px;
+				margin: 0px; 
+				background-color: #FFFFFF; /* 浏览器不支持时显示 */
+				background-image: linear-gradient(to right, #FFFFFF, #16299D);
+				width: 1160px;
+				height: 100px;
+				border: 1px solid #000000;
+				cursor: pointer;
+			}
+			div#samsunglogo {
+				padding: 0px;
+				margin: 0px; 
+				height: 100px;
+				width: 100px;
+				display: inline;
+			}
+			div#samsungtext {
+				padding: 0px;
+				margin: 0px; 
+				float: right;
+				display: inline;
+			}
 			.a {text-decoration: none;}
 			.a:hover {text-decoration: underline;}
 		</style>
@@ -71,8 +101,8 @@
 					</div></a>
 			</div>
 			<div id="navigation" align style="text-align:center;height:32px;">
-				<b><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;">首页</span></b>
-				<a href="brand.html" style="text-decoration:none;"><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;margin-left:20px;">牌子</span></a>
+				<a href="index.html" style="text-decoration:none;"><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;">牌子</span></a>
+				<b><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;margin-left:20px;">牌子</span></b>
 				<a href="about.html" style="text-decoration:none;"><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;margin-left:20px;">关于</span></a>
 			</div>
 			<div id="navigation2" align style="height:80px;">
@@ -80,10 +110,22 @@
 				<br>
 				<br>
 				<b><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;">您所在：</span></b>
-				<span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;">首页</span>
+				<a href="index.html" style="text-decoration:none;"><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;">首页</span></a><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;margin-left:10px;margin-right:10px;">></span><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:32px;">品牌</span>
 			</div>
 			<div id="span" align>
-				<span style="font-size:14px;">欢迎访问手机型号与资源数据库(PhoneDB)！本站致力于收集比较全的手机型号与资源，提供该手机型号、信息、参数、图片，还提供该手机铃声、闹铃、通知铃、开关机画面&声音、UI画面等资源。(有些手机缺失资源或没有)<br>当前为测试版(Beta)，我们一起加油！</span>
+				<div id="brand" align>
+					<a href="index.html" style="text-decoration:none;">
+					<div id="samsung" onclick="location.href='samsung.html';" align>
+						<div id="samsunglogo">
+							<a style="width:100px;float:left;line-height:100px;" href="samsung.html"><img src="img/brand/samsung.png" alt="Samsung" width="100px"></a>
+						</div>
+						<div id="samsungtext">
+							<b><span style="font-size:30px;vertical-align:middle;color:#FFFFFF;float:right;line-height:50px;">三星</span></b>
+							<br>
+							<span style="font-size:20px;vertical-align:middle;color:#FFFFFF;float:right;line-height:50px;">共收录 2 台手机</span>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div id="end" align style="text-align:center;height:50px;">
 				<b><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:50px;">版权所有 (C) 浩宇_1231, 2023-2024.</span></b>
