@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>红土卫视——看电视 —— 红色土地网——红土广播电视台官方网站</title>
+		<link rel="shortcut icon" href="../image/httv.png" type="image/x-icon">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+		<link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+		<style>
+			body {
+				background-color: #86CCFD;
+				margin: 0px; 
+			}
+			div#main {
+				padding: 0px;
+				margin: 0px; 
+				background-color: #FFFFFF;
+				width: 1280px;
+				justify-content: center;
+				margin: auto;
+			}
+			div#title {
+				padding: 48px;
+				margin: 0px; 
+				background-color: #FFFFFF;
+				background-image: url('../image/titlebackgroundimage.png');
+				background-repeat: no-repeat;
+				background-size: 100%;
+				text-shadow: 0 0 10px white,0 0 20px white,0 0 30px white,0 0 40px white;
+			}
+			div#null {
+				padding: 0px;
+				margin: 0px; 
+			}
+			div#navigation {
+				padding: 10px;
+				margin: 0px; 
+				background-color: #AA0000;
+				justify-content: center;
+			}
+			div#end {
+				padding: 4px;
+				margin: 0px; 
+				background-color: #404040;
+				justify-content: center;
+			}
+			div#nstv {
+				padding: 0px;
+				margin: 0px; 
+				border: 1px solid #AA0000;
+				background-color: #AA0000;
+				width: 130px;
+				height: 84px;
+			}
+			div#stv {
+				padding: 0px;
+				margin: 0px; 
+				border: 1px solid #808080;
+				width: 130px;
+				height: 84px;
+			}
+			div#span {
+				padding: 40px;
+				margin: 0px; 
+				background-color: #FFFFFF;
+				width: 1200px;
+			}
+			hr {
+				padding: 0px;
+				margin-top: 10px; 
+				margin-bottom: 10px; 
+				height: 3px;
+				background-color: #AA0000;
+				justify-content: center;
+				border: 0px solid white;
+
+			}
+			.a {text-decoration: none;}
+			.a:hover {text-decoration: underline;}
+		</style>
+	</head>
+		<div id="main" align>
+			<div id="title" align>
+					<a style="height:96px;width:96px;float:left;" href="index.html"><img src="../image/httv.png" alt="HTTV" width="96px" height="96px"></a>
+					<a href="index.html" style="text-decoration:none;"><div style="height:96px;" style="float:left;" id="titletext" align>
+						<div id="titlechitext" style="height:48px;" align>
+							<b><span style="font-family:KaiTi;font-size:48px;vertical-align:middle;color:#000000;padding-left:20px;">红色土地网 Beta</span></b>
+						</div>
+						<div id="titleengtext" style="height:32px;padding-top:10px" align>
+							<b><span style="font-size:24px;vertical-align:middle;color:#808080;padding-left:20px;">红土广播电视台官方网站</span></b>
+						</div>
+					</div></a>
+			</div>
+			<div id="navigation" align style="text-align:center;height:34px;">
+				<a href="../index.html" style="text-decoration:none;"><span style="font-size:20px;color:#FFFFFF;justify-content:center;line-height:32px;">主页</span></a>
+				<b><span style="font-size:20px;color:#FFFFFF;justify-content:center;line-height:32px;margin-left:30px;">看电视</span></b>
+			</div>
+			<div id="span" align>
+				<div id="tv" style="margin-bottom:20px">
+					<div id="nstv">
+						<a style="height:84px;width:128px;float:left;" href="htws.html"><img src="../image/htws.png" alt="红土卫视" width="128px" height="84px"></a>
+					</div><hr>
+				</div>
+				<video id="my-video" class="video-js" width="1200" height="675" controls preload="auto" data-setup='{}' poster="../image/htws.png">
+					<source src="http://localhost:8080/live/livestream.m3u8" type="application/x-mpegURL" />
+				</video>
+				<br><br><b><span style="font-size:28px;">红土卫视——备注</span></b><hr>
+				<span style="font-size:14px;justify-content:center;">红土广播电视台只会在部分时间开启红土卫视频道的信号(通常在节假日)。如果播放出现错误，通常都是因为红土卫视频道的信号暂未开启，请耐心等待红土卫视的信号开启，除了就是网络问题。
+				<br><br><br><b><span style="font-size:28px;">红土卫视——节目表</span></b><hr>
+				<table>
+					<tbody>
+						<tr>
+							<td width=150><b>00:00--11:59</b></td>
+							<td width=1050>上午测试节目</td>
+						</tr>
+						<tr>
+							<td width=150><b>12:00--23:59</b></td>
+							<td width=1050>下午测试节目</td>
+						</tr>
+				</tbody>
+				</table>
+			</div>
+			<div id="end" align style="text-align:center;height:100px;">
+				<span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:50px;">此为 浩宇_1231 的架空电视。请勿当真，仅供娱乐！如有雷同，纯属巧合。</span>
+				<br>
+				<b><span style="font-size:14px;color:#FFFFFF;justify-content:center;line-height:50px;">版权所有 (C) 浩宇_1231, 2023-2024.</span></b>
+			</div>
+		</div>
+		<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+	</body>
+</html>
